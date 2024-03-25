@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+a,
+a:hover {
+  text-decoration: none;
+}
+.logo {
+  margin-top: 10px;
+  display: inline-block;
+}
+.fa-university {
+  font-size: 14pt;
+}
+#logo {
+  color: #ddd;
+}
+.navbar-header a {
+  color: #ddd;
+}
+.navbar-header a:hover {
+  color: #fff;
+}
+.menu {
+  float: right;
+}
+
+.icon-bar {
+  background-color: #fff;
+}
+.bgimage {
+  background-image: url("../img/home-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+.fa-newspaper-o {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  font-size: 30px;
+  border: 2px solid #ebebeb;
+  background-color: #0abde3;
+  color: #fff;
+}
+.text {
+  padding-top: 0px;
+  color: blue;
+  font-size: 32pt;
+  font-family: Edwardian Script ITC;
+  font-style: italic;
+  word-spacing: 2px;
+}
+.contact {
+  text-align: center;
+  padding-top: 20px;
+  color: blue;
+  font-size: 32pt;
+  font-family: Edwardian Script ITC;
+  font-style: italic;
+  word-spacing: 2px;
+}
+.dist {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.head1 {
+  text-align: center;
+  font-family: Edwardian Script ITC;
+  font-size: 40pt;
+  font-style: italic;
+  color: orange;
+  word-spacing: 2px;
+}
+.item > img {
+  width: 100%;
+}
+
+.fa-chevron-left {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+
+.fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  margin-top: -10px;
+}
+.carousel-caption {
+  color: #fff;
+  font-size: 16pt;
+}
+.fa-home,
+.fa-user,
+.fa-mortar-board {
+  font-size: 14pt;
+}
+.fa-phone {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  font-size: 30px;
+  border: 2px solid #ebebeb;
+  background-color: #20c997;
+  color: #fff;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+footer {
+  background-color: #000;
+  text-align: center;
+  height: 80px;
+  color: #fff;
+}
+.fa-envelope {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  font-size: 30px;
+  border: 2px solid #ebebeb;
+  background-color: #badc58;
+  color: #fff;
+}
+#menu .col-sm-4 {
+  background-color: black;
+  color: #fff;
+}
+#menu .col-sm-8 {
+  background-color: green;
+  color: #fff;
+}
+#contenu {
+  background-color: #fff;
+}
+#service,
+#service a {
+  color: orange;
+}
+#service a:hover {
+  color: #fff;
+}
+#salut {
+  color: orange;
+  text-align: center;
+}
+
+.bgTitle {
+  background-color: rgb(0, 0, 255, 0.5);
+  color: #d8000c;
+}
+.bgError {
+  color: #d8000c;
+  background-color: #ffbaba;
+  text-align: center;
+}
