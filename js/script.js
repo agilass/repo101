@@ -14,3 +14,13 @@ formAddEns.addEventListener('submit',(e)=>{
     }
     
 })
+function doReload(){
+document.addEventListener('DOMContentLoaded',()=>{
+    const el = document.getElementsByTagName('select')[0];
+    if (el) {
+        addEventListener('change', (e) =>{
+            location = 'index.php?action=listeEtudiants&layout=Admin&selectclass='+ e.target.options[e.target.selectedIndex].value;
+        });
+    }  
+});
+}

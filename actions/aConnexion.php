@@ -6,7 +6,7 @@ session_start();
 $_SESSION["login"] = $_POST["login"];
 $_SESSION["password"] = $_POST["password"];
 
-include("models\model" . $_GET['user'] . ".php");
+include ("models\model" . $_GET['user'] . ".php");
 
 if (!empty($_POST["login"]) && !empty($_POST["password"])) {
 

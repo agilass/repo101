@@ -83,9 +83,15 @@ function listeEtudiants()
 	return $cn->query("select * from etudiant ORDER BY classe, num_classe;");
 }
 
-function listeEtudiants_classe($class)
+
+function listeEtudiants_classe($selectclass)
 {
 	$cn = ouvrirConnexion();
-	return $cn->query("select * from etudiant where classe='" . $class . "' ORDER BY classe, num_classe;");
+	return $cn->query("select * from etudiant where classe='" . $selectclass . "' ORDER BY classe, num_classe;");
 }
 
+function listeClasse()
+{
+	$cn = ouvrirConnexion();
+	return $cn->query("select distinct(classe) from etudiant ORDER BY classe;");
+}

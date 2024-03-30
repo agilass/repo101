@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Espace Admin</title>
+	<script src="js/script.js"></script>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/font-awesome.min.css" rel="stylesheet"><!--//font awesome-->
 	<link href="css/style.css" rel="stylesheet">
@@ -27,7 +28,9 @@
 				<br>
 				<ul>
 
-					<li> <a href="index.php?action=listeEtudiants&layout=Admin"> <span class="fa fa-list"></span>
+					<li> <a href="index.php?action=listeEtudiants&layout=Admin&selectclass=" <?php if (isset($_GET["selectclass"]))
+						echo $_GET["selectclass"]; ?>> <span
+								class="fa fa-list"></span>
 							Afficher Liste des étudiants</a></li>
 					<hr>
 

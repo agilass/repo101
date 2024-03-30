@@ -4,6 +4,23 @@ ob_start();
 ?>
 <h3 class="text-center">liste des &eacute;tudiants </h3>
 <hr />
+<b>CLASSE :</b>
+<select name="selectclass" id="classe" class="form-select" aria-label="Default select example" onchange="doReload()" ;>
+    <option <?php if (empty($_GET["selectclass"])) {
+        echo "selected";
+    } ?>; value="">Toutes les classes</option>
+
+    <?php while ($row = $classes->fetch()) { ?>
+        <option <?php if ($row[0] == $_GET["selectclass"])
+            echo "selected='selected'" ?> ; value="<?php echo $row[0];
+        ?>">
+            <?php echo $row[0]; ?>
+        </option>
+    <?php }
+    ?>
+</select>
+
+<hr>
 <table class="table table-hover">
     <thead>
         <tr>
@@ -49,6 +66,19 @@ ob_start();
         </tbody>
     <?php } ?>
 </table>
+
 <?php
 $page = ob_get_clean();
 ?>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const el = document.getElementsByTagName('select')[0];
+        if (el) {
+            addEventListener('change', (e) => {
+                location = 'index.php?action=listeEtudiants&layout=Admin&selectclass=' + e.target.options[e.target.selectedIndex].value;
+            });
+        }
+    });
+</script>
