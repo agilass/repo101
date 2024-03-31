@@ -31,8 +31,9 @@
 					<li> <a href="index.php?action=listeEtudiants&layout=Admin&selectclass=" <?php if (isset($_GET["selectclass"]))
 						echo $_GET["selectclass"]; ?>> <span
 								class="fa fa-list"></span>
-							Afficher Liste des étudiants</a></li>
+							Liste des étudiants</a></li>
 					<hr>
+
 
 					<li><a href="#"> <span class="fa fa-vcard"></span> Gerer mon profil</a></li>
 					<hr>
@@ -46,6 +47,10 @@
 					<hr>
 					<li><a href="index.php?action=News&layout=Admin"> <span class="fa fa-plus"></span> Add news</a></li>
 					<hr>
+					<li> <a href="index.php?action=ListeNews&layout=Admin"> <span class="fa fa-list"></span>
+							Liste des nouveautés</a></li>
+					<hr>
+
 					<!-- <i class="fa fa-newspaper-o" aria-hidden="true"></i> -->
 					<li><a href="index.php?action=Deconnexion"> <span class="fa fa-user"></span> Se déconnecter</a></li>
 					<hr>

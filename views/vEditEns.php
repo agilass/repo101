@@ -2,11 +2,11 @@
 ob_start();
 ?>
 <div class="container mt-4">
-    <h1 class="fa fa-user-plus fa-3x fa-align-right">Modifier Un Enseignant</h1>
+    <h1 class="fa fa-edit fa-3x fa-align-right">Modifier Un Enseignant</h1>
     <form id="formAddEns" method="POST" action="index.php?action=saveEns&layout=Admin">
         <div class="form-group">
-            <label for="oldPpr"> Ancien PPR : *</label>
-            <input type="hidden" name="oldPpr" class="form-control" disabled value="<?php echo $ens["ppr"]; ?>" </div>
+            <label for="oldPpr"> Ancien PPR : </label>
+            <input disabled name="oldPpr" class="form-control" disabled value="<?php echo $ens["ppr"]; ?>" </div>
             <div class="form-group">
                 <label for="ppr">Nouveau PPR : *</label>
                 <input type="number" name="ppr" class="form-control" value="<?php echo $ens["ppr"]; ?>">
@@ -24,7 +24,7 @@ ob_start();
                 <input type="text" name="matiereEns" class="form-control" value="<?php echo $ens["matiere"]; ?>">
             </div>
 
-            <input type="submit" class="btn btn-primary">Enregistrer</input>
+            <input type="submit" class="btn btn-primary" value="Enregistrer">
             <input type="reset" value="Annuler" onClick="history.go(-1)" />
     </form>
 
