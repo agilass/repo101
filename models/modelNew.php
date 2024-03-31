@@ -43,7 +43,7 @@ function ModifierNew($t)
 
 	$cn = ouvrirConnexion();
 
-	$Rq = "update New set newId='" . $t["C"] . "' , Nom='" . $t['N'] . "', Pr�nom = '" . $t['P'] . "' where Code ='" . $t['oldC'] . "'";
+	$Rq = "update New set titre1='" . $t['titre1'] . "', titre2 = '" . $t['titre2'] . "', sujet = '" . $t['sujet'] . "', path = '" . $t['path'] . "' where newId='" . $t["newId"] . "'";
 	$resultat = $cn->exec($Rq);
 
 }
@@ -63,7 +63,7 @@ function AfficherNew($c)
 	$cn = ouvrirConnexion();
 	$Rq = "select * from new where newId='" . $c . "'";
 	$resultat = $cn->query($Rq);
-	return $resultat;
+	return $resultat->fetch();
 
 	//return $cn->query("select * from New where Code='" . $c . "'");
 

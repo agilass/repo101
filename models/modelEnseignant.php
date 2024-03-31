@@ -56,7 +56,7 @@ function AfficherEnseignant($c)
     $cn = ouvrirConnexion();
     $Rq = "select * from enseignant where ppr='" . $c . "'";
     $resultat = $cn->query($Rq);
-    return $resultat;
+    return $resultat->fetch();
 
     //return $cn->query("select * from enseignant where Code='" . $c . "'");
 
