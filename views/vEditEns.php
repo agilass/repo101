@@ -6,7 +6,7 @@ ob_start();
     <form id="formAddEns" method="POST" action="index.php?action=saveEns&layout=Admin">
         <div class="form-group">
             <label for="oldPpr"> Ancien PPR : </label>
-            <input disabled name="oldPpr" class="form-control" disabled value="<?php echo $ens["ppr"]; ?>" </div>
+            <input readonly name="oldPpr" class="form-control" value="<?php echo $ens["ppr"]; ?>" </div>
             <div class="form-group">
                 <label for="ppr">Nouveau PPR : *</label>
                 <input type="number" name="ppr" class="form-control" value="<?php echo $ens["ppr"]; ?>">

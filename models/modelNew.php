@@ -43,7 +43,7 @@ function ModifierNew($t)
 
 	$cn = ouvrirConnexion();
 
-	$Rq = "update New set titre1='" . $t['titre1'] . "', titre2 = '" . $t['titre2'] . "', sujet = '" . $t['sujet'] . "', path = '" . $t['path'] . "' where newId='" . $t["newId"] . "'";
+	$Rq = "update New set titre1='" . $t['titreEd1'] . "', titre2 = '" . $t['titreEd2'] . "', sujet = '" . $t['sujetEd'] . "', path = '" . $t['pathEd'] . "' where newId='" . $t["newIdEd"] . "'";
 	$resultat = $cn->exec($Rq);
 
 }
