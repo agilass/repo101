@@ -177,3 +177,7 @@ footer {
   background-color: #ffbaba;
   text-align: center;
 }
+#imgNew {
+  height: 100px;
+  display: inline-block;
+}
