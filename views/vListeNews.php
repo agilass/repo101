@@ -40,13 +40,13 @@ ob_start();
                 </td>
                 <td>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-success btn-lg"><a
-                                href="index.php?action=EditNew&newId=<?php echo $row[0]; ?>&layout=Admin"><i
-                                    class="fa fa-edit" style="color:white;">
-                                </i></a></button>
-                        <button type="button" class="btn btn-danger btn-lg"><a
-                                href="index.php?action=DeleteNew&newId=<?php echo $row[0]; ?>"><i class="fa fa-trash"
-                                    style="color:white"></i></a></button>
+                        <a id="EditBtn" href="index.php?action=EditNew&newId=<?php echo $row[0]; ?>&layout=Admin"
+                            role="button" class="btn btn-success btn-lg" onclick="return confirm_del();">
+                            <i class="fa fa-edit" style="color:white;">
+                            </i></a>
+                        <a id="delBtn" href="index.php?action=DeleteNew&newId=<?php echo $row[0]; ?>" role="button"
+                            class="btn btn-danger btn-lg" onclick="return confirm_del();"><i class="fa fa-trash"
+                                style="color:white"></i></a>
                     </div>
                 </td>
 

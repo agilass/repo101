@@ -31,13 +31,12 @@ ob_start();
                     </a></td>
                 <td>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-success btn-lg"><a
-                                href="index.php?action=EditEns&layout=Admin&id=<?php echo $row[0]; ?>"><i class="fa fa-edit"
-                                    style="color:white;">
-                                </i></a></button>
-                        <button type="button" class="btn btn-danger btn-lg"><a
-                                href="index.php?action=DeleteEns&id=<?php echo $row[0]; ?>"><i class="fa fa-trash"
-                                    style="color:white"></i></a></button>
+                        <a href="index.php?action=EditEns&layout=Admin&id=<?php echo $row[0]; ?>" role="button"
+                            class="btn btn-success btn-lg"> <i class="fa fa-edit" style="color:white;">
+                            </i>
+                        </a>
+                        <a href="index.php?action=DeleteEns&id=<?php echo $row[0]; ?>" role="button"
+                            class="btn btn-danger btn-lg"><i class="fa fa-trash" style="color:white"></i></a>
                     </div>
                 </td>
             </tr>

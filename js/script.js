@@ -24,3 +24,21 @@ document.addEventListener('DOMContentLoaded',()=>{
     }  
 });
 }
+function confirm_del() {
+    // var agree=confirm("Êtes vous sûr de vouloir effectuer cette action ?");
+    //         if (agree) {
+    //                 return true ;
+    //         }
+    //         else {
+    //                 return false ;
+    //         }
+    // window.confirm("Do you really want to delete?")
+}
+const editBtn = document.getElementById('editBtn');
+editBtn.addEventListener('click', function() {
+    window.confirm("Do you really want to Edit?")
+});
+const delBtn = document.getElementById('delBtn');
+delBtn.addEventListener('click', function() {
+    window.confirm("Do you really want to Delete?")
+});
